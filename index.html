@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-  </header>
-
-<section id="about">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nimra — Security Researcher &amp; QA Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -237,54 +234,35 @@
     <h1>Breaking systems responsibly, <span>so they don't break in production.</span></h1>
     <p class="subtitle">I run authorized penetration tests, web application security assessments, and
     applied ML research into phishing detection — currently working across staging and production for
-    a live platform.</p>
+    a US-based music streaming platform.</p>
     <p class="loc">📍 Pakistan · BS Cybersecurity, Air University (2026)</p>
 
     <div class="hero-ctas">
       <a href="#project" class="btn btn-primary">View Flagship Project →</a>
- <a href="assets/Nimra_Shahid_CV_2026.pdf"
+      <a href="assets/Nimra_Shahid_CV_2026.pdf"
    class="btn btn-ghost"
-   target="_blank"
-   download>
+   download
+   target="_blank">
    Download CV
 </a>
-      <div class="hero-ctas">
-  <a href="#project" class="btn btn-primary">View Flagship Project →</a>
+    </div>
 
-  <a href="assets/Nimra_Shahid_CV_2026.pdf"
-     class="btn btn-ghost"
-     target="_blank"
-     download>
-     Download CV
-  </a>
-</div>
-
-<div class="stat-strip">
-  <div class="stat-cell">
-    <div class="num" data-count="96.75" data-suffix="%">0%</div>
-    <div class="lbl">Detection Accuracy</div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="num" data-count="96.75" data-suffix="%">0%</div><div class="lbl">Detection Accuracy</div></div>
+      <div class="stat-cell"><div class="num" data-count="549" data-suffix="K">0</div><div class="lbl">URLs in Training Set</div></div>
+      <div class="stat-cell"><div class="num" data-count="4" data-suffix="+">0</div><div class="lbl">Security Internships</div></div>
+      <div class="stat-cell"><div class="num" data-count="15+" data-suffix="" data-crit="true">0</div><div class="lbl">Critical Findings Confirmed</div></div>
+    </div>
   </div>
+</header>
 
-  <div class="stat-cell">
-    <div class="num" data-count="549" data-suffix="K">0</div>
-    <div class="lbl">URLs in Training Set</div>
-  </div>
-
-  <div class="stat-cell">
-    <div class="num" data-count="4" data-suffix="+">0</div>
-    <div class="lbl">Security Internships</div>
-  </div>
-
-  <div class="stat-cell">
-    <div class="num" data-count="15+">0</div>
-    <div class="lbl">Critical Findings Confirmed</div>
-  </div>
-</div>
-      <div class="eyebrow-tag">01 — ABOUT</div>
+<section id="about">
+  <div class="wrap reveal">
+    <div class="eyebrow-tag">01 — ABOUT</div>
     <h2 class="section-title">Who I am</h2>
     <div class="about-grid">
       <div>
-        <p>I'm a <strong>Security Researcher and QA Analyst</strong> working on a freelance contractor basis
+        <p>I'm a <strong>Security Researcher and QA Analyst</strong> working
         for a US-based music streaming platform, where I run authorized penetration tests, web application
         security assessments, and QA testing across staging and production environments — everything from
         payment flows to admin panels to API endpoints.</p>
@@ -429,7 +407,7 @@
       <div class="tl-item current">
         <div class="tl-meta">Current</div>
         <h4>Security Researcher &amp; QA Analyst</h4>
-        <div class="org">US-based Music Streaming Platform</div>
+        <div class="org">US-based Music Streaming Platform (freelance contractor)</div>
         <p>Authorized penetration testing, web application security assessments, and QA testing across
         staging and production.</p>
       </div>
@@ -506,7 +484,7 @@
 <footer>
   <div class="wrap">
     <p>Built &amp; maintained by Nimra</p>
-    <p>© <span id="footYear"></span> ·Pakistan</p>
+    <p>© <span id="footYear"></span> · Rawalpindi, Pakistan</p>
   </div>
 </footer>
 
@@ -545,6 +523,12 @@
     });
   }, { threshold: 0.5 });
   counters.forEach(c=>counterIO.observe(c));
+
+  // resume button placeholder
+  document.getElementById('resumeBtn').addEventListener('click', function(e){
+    e.preventDefault();
+    alert('Add a link to your CV/resume PDF on this button (id="resumeBtn" in index.html).');
+  });
 
   // --- Live URL risk heuristic demo ---
   function analyzeUrl(raw){
