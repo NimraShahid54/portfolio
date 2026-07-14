@@ -239,26 +239,13 @@
 
     <div class="hero-ctas">
       <a href="#project" class="btn btn-primary">View Flagship Project →</a>
-      <a href="assets/Nimra_Shahid_CV_2026.pdf"
+ <a href="assets/Nimra_Shahid_CV_2026.pdf"
    class="btn btn-ghost"
    target="_blank"
    download>
    Download CV
 </a>
-    </div>
-
-    <div class="stat-strip">
-      <div class="stat-cell"><div class="num" data-count="96.75" data-suffix="%">0%</div><div class="lbl">Detection Accuracy</div></div>
-      <div class="stat-cell"><div class="num" data-count="549" data-suffix="K">0</div><div class="lbl">URLs in Training Set</div></div>
-      <div class="stat-cell"><div class="num" data-count="4" data-suffix="+">0</div><div class="lbl">Security Internships</div></div>
-      <div class="stat-cell"><div class="num" data-count="1" data-suffix="" data-crit="true">0</div><div class="lbl">Critical Findings Confirmed</div></div>
-    </div>
-  </div>
-</header>
-
-<section id="about">
-  <div class="wrap reveal">
-    <div class="eyebrow-tag">01 — ABOUT</div>
+      <div class="eyebrow-tag">01 — ABOUT</div>
     <h2 class="section-title">Who I am</h2>
     <div class="about-grid">
       <div>
@@ -523,12 +510,6 @@
     });
   }, { threshold: 0.5 });
   counters.forEach(c=>counterIO.observe(c));
-
-  // resume button placeholder
-  document.getElementById('resumeBtn').addEventListener('click', function(e){
-    e.preventDefault();
-    alert('Add a link to your CV/resume PDF on this button (id="resumeBtn" in index.html).');
-  });
 
   // --- Live URL risk heuristic demo ---
   function analyzeUrl(raw){
